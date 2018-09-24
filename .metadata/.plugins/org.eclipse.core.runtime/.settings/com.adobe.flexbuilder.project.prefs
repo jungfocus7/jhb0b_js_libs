@@ -1,0 +1,6 @@
+#Mon Sep 24 20:57:58 KST 2018
+fbBuildID=335153
+eclipse.preferences.version=1
+workspaceFXPUUID=d7f09c14-417e-498e-9b9e-17517c29a94e
+com.adobe.flexbuilder.project.flex_sdks=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<sdks>\r\n  <sdk location\="C\:/Program Files (x86)/Adobe/Adobe Flash Builder 4.6/sdks/3.6.0" name\="Flex 3.6A"/>\r\n  <sdk location\="C\:/Program Files (x86)/Adobe/Adobe Flash Builder 4.6/sdks/4.6.0" name\="Flex 4.6.0"/>\r\n  <sdk defaultSDK\="true" location\="D\:/FlashLabs/__FlexSDK" name\="Apache Flex 4.16.1 FP30.0 AIR30.0 en_US"/>\r\n</sdks>\r\n
+flexBuilderVersion=4.6.0.335153
