@@ -1,3 +1,5 @@
+'use strict';
+
 const { _mu_num, _mu_arr } = require('./_muall');
 
 

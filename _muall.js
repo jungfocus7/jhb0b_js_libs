@@ -1,3 +1,6 @@
+'use strict';
+
+
 const _mu_num = {
     is_float: (tv) => {
         return ((tv % 1) !== 0);
