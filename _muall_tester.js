@@ -18,10 +18,11 @@ console.log('===================================================================
 console.log('== _mu_arr: ', _mu_arr);
 console.log('====================================================================================================');
 console.log('{{----------------------------------------------------------------------');
-const _arr = '0123456789'.split('');
-for (let tl = 20, i = -20; i < tl; i++) {
-    let tc = _mu_arr.get_at(_arr, i);
-    console.log(i, tc);
+// const _arr = '0123456789'.split('');
+const _arr = 'abcdefghijklmnopqrstuvwxyz'.split('');
+for (let tl = 30, i = -30; i < tl; i++) {
+    let te = _mu_arr.get_at(_arr, i);
+    console.log(i, te);
 }
 console.log('}}----------------------------------------------------------------------');
 
