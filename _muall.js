@@ -37,8 +37,9 @@ Object.freeze(_mu_num);
 
 const _mu_arr = {
     is_arr: (tarr) => {
-        if (!Array.isArray(tarr)) return false;
-        return (tarr !== null) && (tarr.length > 0);
+        return Array.isArray(tarr) && (tarr.length > 0);
+        // if (!Array.isArray(tarr)) return false;
+        // return (tarr !== null) && (tarr.length > 0);
     }
     ,
 
@@ -57,7 +58,7 @@ const _mu_arr = {
     ,
 
     shuffle: (tarr) => {
-        if (!_mu_arr.is_arr(tarr)) return false;
+        if (!_mu_arr.is_arr(tarr)) return;
 
         for (let tl = tarr.length, i = 0; i < tl; i++) {
             let te = tarr[i];
@@ -69,14 +70,14 @@ const _mu_arr = {
     ,
 
     copy: (tarr) => {
-        if (!_mu_arr.is_arr(tarr)) return false;
+        if (!_mu_arr.is_arr(tarr)) return null;
 
         return tarr.slice();
     }
     ,
 
     get_at: (tarr, ti) => {
-        if (!_mu_arr.is_arr(tarr)) return false;
+        if (!_mu_arr.is_arr(tarr)) return null;
 
         let tl = tarr.length;
         if (ti < 0)
