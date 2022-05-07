@@ -30,5 +30,14 @@ console.log('>>>', _arr4.join(''));
 console.log('');
 
 
+const _arr5 = Array.from('Windows10');
+const _arr6 = hfarr.copy(_arr5);
+hfarr.shuffle(_arr6);
+console.log('hfarr.copy >>> ', _arr5.join(''));
+console.log('hfarr.copy >>> ', _arr6.join(''));
+console.log('');
+
+
+
 
 
