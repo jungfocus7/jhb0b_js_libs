@@ -2,6 +2,9 @@
 //======================================================================
 // 배열 관련 모듈
 //======================================================================
+const hfnum = require('./hfnum');
+
+
 /**
  *
  * @param {*} tarr
@@ -54,7 +57,7 @@ const shuffle = (tarr) => {
     const tl = tarr.length;
     for (let i = 0; i < tl; i++) {
         let te = tarr[i];
-        let ti = _mu_num.randRange(0, tl - 1);
+        let ti = hfnum.randRange(0, tl - 1);
         tarr[i] = tarr[ti];
         tarr[ti] = te;
     }
