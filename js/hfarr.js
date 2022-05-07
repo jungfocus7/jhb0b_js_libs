@@ -6,7 +6,7 @@ const hfnum = require('./hfnum');
 
 
 /**
- *
+ * 배열객체 유효성 확인
  * @param {*} tarr
  * @returns
  */
@@ -20,7 +20,7 @@ const is_arr = (tarr) => {
 
 
 /**
- *
+ * 배열에 요소 확인
  * @param {*} tarr
  * @param {*} te
  * @returns
@@ -46,7 +46,7 @@ const is_contains = (tarr, te) => {
 
 
 /**
- *
+ * 배열 섞기
  * @param {*} tarr
  * @returns
  */
@@ -67,7 +67,7 @@ const shuffle = (tarr) => {
 
 
 /**
- *
+ * 배열 복사
  * @param {*} tarr
  * @returns
  */
