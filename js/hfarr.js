@@ -85,6 +85,7 @@ module.exports = Object.seal({
     is_contains,
     shuffle,
     copy
+
 });
 
 
