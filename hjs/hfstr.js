@@ -4,69 +4,60 @@
 //======================================================================
 /**
  * 문자열 유효성 확인
- * @param {*} tstr
- * @returns
+ * @param {string} str
+ * @returns boolean
  */
-const is_str = (tstr) => {
-    if (typeof tstr === 'string')
-        return tstr.trim() !== '';
+const is_str = (str) => {
+    if (typeof str === 'string')
+        return str.trim() !== '';
     else
         return false;
-
 };
-
 
 
 /**
  * 이름에서 마지막 번호 확인
- * @param {*} tstr
- * @param {*} token
- * @returns
+ * @param {string} str
+ * @param {string} token
+ * @returns number
  */
-const get_lastNum = (tstr, token = '_') => {
-    const ti = tstr.lastIndexOf(token) + 1;
-    return +tstr.substr(ti);
-
+const get_lastNum = (str, token = '_') => {
+    const ti = str.lastIndexOf(token) + 1;
+    return +str.substr(ti);
 };
 
 
-
 /**
- * 문자열 >> ArrayBuffer 변환
- * @param {*} tstr
- * @returns
+ * 문자열을 ArrayBuffer객체로 변환
+ * @param {string} str
+ * @returns Uint16Array
  */
-const str2ab = (tstr) => {
-    const tl = tstr.length;
-
-    let tab = new Uint16Array(new ArrayBuffer(tl * 2));
-    for (let i = 0; i < tl; i++) {
-        tab[i] = tstr.charCodeAt(i);
+const str2ab = (str) => {
+    const l = str.length;
+    let ab = new Uint16Array(new ArrayBuffer(l * 2));
+    for (let i = 0; i < l; i++) {
+        ab[i] = str.charCodeAt(i);
     }
 
-    return tab;
-
+    return ab;
 };
-
 
 
 /**
- * ArrayBuffer >> 문자열 변환
- * @param {*} tab
- * @returns
+ * ArrayBuffer객체를 문자열로 변환
+ * @param {ArrayBuffer} ab
+ * @returns string
  */
-const ab2str = (tab) => {
-    return String.fromCharCode.apply(null, tab);
-
+const ab2str = (ab) => {
+    return String.fromCharCode.apply(null, ab);
 };
 
 
 
-
-module.exports = Object.seal({
-    is_empty,
-    get_lastNum
+export default Object.seal({
+    is_str,
+    get_lastNum,
+    str2ab,
+    ab2str
 });
-
-
 //======================================================================

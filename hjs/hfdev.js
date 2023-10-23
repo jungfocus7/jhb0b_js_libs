@@ -5,7 +5,6 @@
 const _lgp = '[#hf]';
 
 
-
 /**
  * 로그 출력
  * @param {massage} tmsg
@@ -13,15 +12,11 @@ const _lgp = '[#hf]';
 const log = (tmsg) => {
     if (typeof tmsg === 'string')
         console.log(_lgp, tmsg);
-
 };
-
 
 
 
 module.exports = Object.seal({
     log
 });
-
-
 //======================================================================
