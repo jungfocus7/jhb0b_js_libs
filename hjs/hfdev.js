@@ -7,16 +7,16 @@ const _lgp = '[#hf]';
 
 /**
  * 로그 출력
- * @param {massage} tmsg
+ * @param {massage} msg
  */
-const log = (tmsg) => {
-    if (typeof tmsg === 'string')
-        console.log(_lgp, tmsg);
+const log = (msg) => {
+    if (typeof msg === 'string')
+        console.log(_lgp, msg);
 };
 
 
 
-module.exports = Object.seal({
+export default Object.seal({
     log
 });
 //======================================================================

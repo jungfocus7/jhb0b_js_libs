@@ -8,13 +8,24 @@ import hfnum from './hfnum.js';
 
 /**
  * 배열객체 유효성 확인
- * @param {array} tarr
+ * @param {array} arr
  * @returns boolean
  */
-const is_arr = (tarr) => {
-    return Array.isArray(tarr) && (tarr.length > 0);
-    // if (!Array.isArray(tarr)) return false;
-    // return (tarr !== null) && (tarr.length > 0);
+const is_arr = (arr) => {
+    return Array.isArray(arr) && (arr.length > 0);
+};
+
+
+/**
+ * 배열객체 없는지 확인
+ * @param {array} arr
+ * @returns boolean
+ */
+const is_empty = (arr) => {
+    if (Array.isArray(arr) && (arr.length > 0))
+        return false;
+    else
+        return true;
 };
 
 
@@ -72,6 +83,7 @@ const copy = (arr) => {
 
 export default Object.seal({
     is_arr,
+    is_empty,
     is_contains,
     shuffle,
     copy
