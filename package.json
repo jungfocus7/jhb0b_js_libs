@@ -1,0 +1,16 @@
+{
+  "name": "jhb0b_js_libs",
+  "version": "1.0.0",
+  "description": "jhb0b javascript library",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "libs"
+  ],
+  "author": "jhb0b",
+  "license": "ISC",
+  "type": "module"  
+}

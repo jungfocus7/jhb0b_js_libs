@@ -1,9 +1,9 @@
-const hfarr = require('./js/hfarr');
+import hfarr from './hjs/hfarr.js';
 /*
-    is_arr,
-    is_contains,
-    shuffle,
-    copy
+is_arr,
+is_contains,
+shuffle,
+copy
 */
 
 

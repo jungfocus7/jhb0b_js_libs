@@ -1,4 +1,4 @@
-const hfnum = require('./js/hfnum');
+import hfnum from './hjs/hfnum.js';
 /*
 is_float,
 is_minus,
